@@ -16,11 +16,11 @@ app.http('redirect', {
     }
 
     try {
-      const res = await fetch(process.env."https://hook.eu2.make.com/xp8jcd5ccrci2u7h4occyeemthbhc08v", {
+      const res = await fetch(process.env.MAKE_ATTENDANCE_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Auth': process.env.fastlane2025 || ''
+          'X-Auth': process.env.MAKE_SHARED_SECRET || ''
         },
         body: JSON.stringify({
           ticket,
