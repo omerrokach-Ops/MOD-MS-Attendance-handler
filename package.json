@@ -1,0 +1,10 @@
+{
+  "name": "teams-link-handler",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@azure/functions": "^4.6.0"
+  }
+}
